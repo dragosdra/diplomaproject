@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth import login, logout, authenticate
+from polls.models import User
+
 def home(request):
     return render(request, "index.html")
 
@@ -23,7 +25,6 @@ def login(request):
 def register(request):
     if request.method == "POST":
         print(request.POST)
-        from django.contrib.auth.models import User
         User.objects.create_user(request.POST.get('username'),request.POST.get('email'),request.POST.get('password'))
     return render(request, 'register.html')
 

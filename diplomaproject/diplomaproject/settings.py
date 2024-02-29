@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -56,8 +57,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-APPEND_SLASH = False
-REMOVE_SLASH = True
+APPEND_SLASH = True
+REMOVE_SLASH = False
 
 ROOT_URLCONF = 'diplomaproject.urls'
 

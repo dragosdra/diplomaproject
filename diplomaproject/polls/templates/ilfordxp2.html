@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% block title %}Ilford XP2 Super{% endblock %}
+{% load static %}
 {% block content %}
     <div class="product-container">
         <div class="product-image">
-            <img src="static/img/products/Film/XP2super.jpg" alt="Product Image">
+            <img src="{% static '/img/XP2super.jpg' %}" alt="Product Image">
         </div>
         <div class="product-details">
             <h1>Ilford XP2 Super</h1>

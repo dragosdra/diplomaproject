@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% block title %}Contax T2{% endblock %}
+{% load static %}
 {% block content %}
     <div class="product-container">
         <div class="product-image">
-            <img src="static/img/products/Cameras/contaxt2.jpg" alt="Product Image">
+            <img src="{% static '/img/contaxt2.jpg' %}" alt="Product Image">
         </div>
         <div class="product-details">
             <h1>Contax T2</h1>

@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% block title %}Pentax 6x7{% endblock %}
+{% load static %}
 {% block content %}
     <div class="product-container">
         <div class="product-image">
-            <img src="static/img/products/Cameras/pentax67.jpg" alt="Product Image">
+            <img src="{% static '/img/pentax67.jpg' %}"alt="Product Image">
         </div>
         <div class="product-details">
             <h1>Pentax 6X7</h1>

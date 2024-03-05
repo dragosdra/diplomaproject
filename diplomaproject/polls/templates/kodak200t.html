@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% block title %}Kodak VISION3 200T{% endblock %}
+{% load static %}
 {% block content %}
     <div class="product-container">
         <div class="product-image">
-            <img src="static/img/products/Film/200T.jpg" alt="Product Image">
+            <img src="{% static '/img/200T.jpg' %}" alt="Product Image">
         </div>
         <div class="product-details">
             <h1>Kodak VISON3 200T</h1>

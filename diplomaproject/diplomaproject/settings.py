@@ -58,7 +58,6 @@ MIDDLEWARE = [
 ]
 
 APPEND_SLASH = True
-REMOVE_SLASH = False
 
 ROOT_URLCONF = 'diplomaproject.urls'
 

@@ -17,24 +17,27 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from polls import views
+from django.shortcuts import redirect
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('products', views.products , name="products"),
-    path('darkroom', views.darkroom, name="darkroom"),
-    path('login', views.login, name="login"),
-    path('register', views.register, name="register"),
-    path('contact', views.contact, name="contact"),
-    path('canonae1program', views.canonae1program, name="canonae1program"),
-    path('contaxt2', views.contaxt2, name="contaxt2"),
-    path('ilfordhp5', views.ilfordhp5, name="ilfordhp5"),
-    path('ilfordxp2', views.ilfordxp2, name="ilfordxp2"),
-    path('vision350d', views.kodak50d, name="vision350d"),
-    path('vision3250d', views.kodak250d, name="vision3250d"),
-    path('vision3200t', views.kodak200t, name="vision3200t"),
-    path('vision3500t', views.kodak500t, name="vision3500t"),
-    path('kodakgold200', views.kodakgold200, name="kodakgold200"),
-    path('mamiya7', views.mamiya7, name="mamiya7"),
-    path('pentax6x7', views.pentax6x7, name="pentax6x7"),
-    path('xpan', views.xpan, name="xpan"),
+    path('products/', views.products , name="products"),
+    path('darkroom/', views.darkroom, name="darkroom"),
+    path('login/', views.login, name="login"),
+    path('register/', views.register, name="register"),
+    path('contact/', views.contact, name="contact"),
+    path('products/canonae1program/', views.canonae1program, name="canonae1program"),
+    path('products/contaxt2/', views.contaxt2, name="contaxt2"),
+    path('products/ilfordhp5/', views.ilfordhp5, name="ilfordhp5"),
+    path('products/ilfordxp2/', views.ilfordxp2, name="ilfordxp2"),
+    path('products/vision350d/', views.kodak50d, name="vision350d"),
+    path('products/vision3250d/', views.kodak250d, name="vision3250d"),
+    path('products/vision3200t/', views.kodak200t, name="vision3200t"),
+    path('products/vision3500t/', views.kodak500t, name="vision3500t"),
+    path('products/kodakgold200/', views.kodakgold200, name="kodakgold200"),
+    path('products/mamiya7/', views.mamiya7, name="mamiya7"),
+    path('products/pentax6x7/', views.pentax6x7, name="pentax6x7"),
+    path('products/xpan/', views.xpan, name="xpan"),
     ]
+    
